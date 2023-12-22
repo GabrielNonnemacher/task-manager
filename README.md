@@ -1,27 +1,52 @@
-# App
+![Task Manager](https://github.com/GabrielNonnemacher/task-manager/assets/87139289/26583f5b-e054-4489-b440-6ad126ee9de3)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.5.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<br/>
 
-## Code scaffolding
+## ⚙️ Functionalities
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+<br/>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 🛠️ Technologies and Tools
 
-## Running unit tests
+* Angular - version '^16.1.0'.
+  
+<br/>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## ✒️ Authors
 
-## Running end-to-end tests
+* **Gabriel José Nonnemacher** - [GabrielNonnemacher](https://github.com/GabrielNonnemacher)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+<br/>
 
-## Further help
+## 📄 License
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+MIT License - see the file [LICENSE](https://github.com/GabrielNonnemacher/task-manager/blob/master/LICENSE) for details.
+
+<br/>
+
+## <img height="20px" src="https://cdn-icons-png.flaticon.com/512/352/352163.png"> Initialization
+
+First copy the project to a desired folder
+```
+git clone https://github.com/GabrielNonnemacher/calculator.git
+```
+Install necessary dependencies
+```
+npm install
+```
+Run the project
+```
+ng serve
+```
+To build the project, run the command. The build artifacts will be stored in the `dist/` directory
+```
+ng build
+```
+
+<br/>
+
+## 👀 Preview
+### Screen
