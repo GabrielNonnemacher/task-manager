@@ -1,1 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
+:root {
+    --font-default: 'Lato', sans-serif;
+    --white: rgb(240, 240, 240);
+    --yellow: #fecd23;
+    --red: #cf0638;
+    --green: #0a996f;
+    --orange: #fa6632;
+    --blue: #1e6495;
+    --tema-001: #38be9a;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font-default);
+}

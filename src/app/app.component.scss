@@ -1,0 +1,13 @@
+.body-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+    height: 100vh;
+}
+
+.conteiner-app {
+    max-width: 1500px;
+    width: 100%;
+    padding: 0px 10%;
+}
