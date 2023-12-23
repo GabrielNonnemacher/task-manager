@@ -1,1 +1,30 @@
-<div>list tasks</div>
+<table>
+    <tr>
+        <th>Task</th>
+        <th>Status</th>
+        <th>Actions </th>
+    </tr>
+    <tr *ngFor="let task of tasks">
+        <td>
+            {{task.name}}
+        </td>
+
+        <td>
+            <checkbox [checked]="task.status">
+            </checkbox>
+        </td>
+
+        <td>
+            dfgdfg
+        </td>
+    </tr>
+</table>
+
+<div *ngIf="tasks.length === 0"
+     class="no-tasks">
+    No tasks registered.
+</div>
+
+<div class="add-button-container">
+    <add-button></add-button>
+</div>

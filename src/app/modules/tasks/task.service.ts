@@ -38,7 +38,7 @@ export class TaskService {
     const task: Task | undefined = this.get(id);
 
     if (task) {
-      task.concluida = !task.concluida;
+      task.status = !task.status;
       this.update(task);
     }
   }

@@ -1,7 +1,7 @@
 export interface Task {
     id?: number;
     name?: string;
-    concluida?: boolean;
+    status?: boolean;
 }
 
 export class TaskDTO {
@@ -9,7 +9,7 @@ export class TaskDTO {
         return {
             id: params.id,
             name: params.name,
-            concluida: params.concluida
+            status: params.status
         };
     }
 }
