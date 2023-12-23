@@ -13,10 +13,14 @@ export class ListTasksComponent implements OnInit {
   tasks: Task[] = [] as Task[];
 
   ngOnInit(): void {
-    this.tasks = [{name:"wewew", status: false}, {name:"wewew", status: true}] //this.listTasks();
+    this.tasks = [{ id: 2, name: "wewew", status: false }, { id: 3, name: "wewew", status: true }] //this.listTasks();
   }
 
   private listTasks(): Task[] {
     return this.service.listAll();
+  }
+
+  public onChangeStatus(id: number): void {
+    this.service.updateStatus(id);
   }
 }

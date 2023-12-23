@@ -10,7 +10,9 @@
         </td>
 
         <td>
-            <checkbox [checked]="task.status">
+            <checkbox [checked]="task.status"
+                      [id]="task.id"
+                      (click)="onChangeStatus($event)">
             </checkbox>
         </td>
 
@@ -20,10 +22,10 @@
     </tr>
 </table>
 
-<div *ngIf="tasks.length === 0"
+<!-- <div *ngIf="tasks.length === 0"
      class="no-tasks">
     No tasks registered.
-</div>
+</div> -->
 
 <div class="add-button-container">
     <add-button></add-button>

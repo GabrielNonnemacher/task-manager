@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'checkbox',
@@ -6,5 +6,11 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./checkbox.component.scss']
 })
 export class CheckboxComponent {
+  @Input() id!: number | undefined;
   @Input() checked: boolean | undefined = false;
+  @Output() click = new EventEmitter;
+
+  public onClick(): void {
+    this.click.emit(this.id);
+  }
 }

@@ -5,12 +5,13 @@
     --white: rgb(240, 240, 240);
     --yellow: #fecd23;
     --red: #cf0638;
-    --green: #0a996f;
+    --green: #3e9b50;
     --orange: #fa6632;
     --blue: #1e6495;
     --tema-001: #38be9a;
     --tema-002: #59e2be;
     --grey-001: rgb(217, 217, 217);
+    --grey-002: rgb(98, 98, 98);
 }
 
 * {
@@ -19,3 +20,5 @@
     padding: 0px;
     font-family: var(--font-default);
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
