@@ -13,6 +13,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { ListTasksComponent } from './components/list-tasks/list-tasks.component';
 import { RegisterComponent } from './components/register/register.component';
 import { TasksModule } from './modules/tasks/tasks.module';
+import { RegisterButtonComponent } from './components/register-button/register-button.component';
+import { BackButtonComponent } from './components/back-button/back-button.component';
+import { FormsModule } from '@angular/forms';
+import { InputTextComponent } from './components/input-text/input-text.component';
 
 @NgModule({
   declarations: [
@@ -23,14 +27,18 @@ import { TasksModule } from './modules/tasks/tasks.module';
     DeleteButtonComponent,
     EditButtonComponent,
     CheckboxComponent,
-    RegisterComponent
+    RegisterComponent,
+    RegisterButtonComponent,
+    BackButtonComponent,
+    InputTextComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     TasksModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
