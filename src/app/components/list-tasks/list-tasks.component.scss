@@ -6,7 +6,7 @@ th {
     color: var(--white);
     height: 36px;
     text-align: center;
-    padding: 8px;
+    padding: 16px;
 }
 
 th:nth-child(1) {
@@ -60,11 +60,16 @@ td {
     width: 100%;
 }
 
-
 .add-button-container {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 64px;
+}
+
+.container-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }

@@ -17,15 +17,18 @@
         </td>
 
         <td>
-            dfgdfg
+            <div class="container-actions">
+                <edit-button></edit-button>
+                <delete-button></delete-button>
+            </div>
         </td>
     </tr>
 </table>
 
-<!-- <div *ngIf="tasks.length === 0"
+<div *ngIf="tasks.length === 0"
      class="no-tasks">
     No tasks registered.
-</div> -->
+</div>
 
 <div class="add-button-container">
     <add-button></add-button>
