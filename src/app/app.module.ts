@@ -12,6 +12,7 @@ import { EditButtonComponent } from './components/edit-button/edit-button.compon
 import { HeaderComponent } from './components/header/header.component';
 import { ListTasksComponent } from './components/list-tasks/list-tasks.component';
 import { TasksModule } from './modules/tasks/tasks.module';
+import { RegisterComponent } from './component/register/register.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { TasksModule } from './modules/tasks/tasks.module';
     AddButtonComponent,
     DeleteButtonComponent,
     EditButtonComponent,
-    CheckboxComponent
+    CheckboxComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

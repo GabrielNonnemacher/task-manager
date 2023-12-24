@@ -5,18 +5,18 @@
         <th>Actions </th>
     </tr>
     <tr *ngFor="let task of tasks">
-        <td>
+        <td [ngClass]="{sucess: task.status}">
             {{task.name}}
         </td>
 
-        <td>
+        <td [ngClass]="{sucess: task.status}">
             <checkbox [checked]="task.status"
                       [id]="task.id"
                       (click)="onChangeStatus($event)">
             </checkbox>
         </td>
 
-        <td>
+        <td [ngClass]="{sucess: task.status}">
             <div class="container-actions">
                 <edit-button></edit-button>
                 <delete-button></delete-button>
