@@ -1,6 +1,6 @@
 import { Routes } from "@angular/router";
-import { RegisterComponent } from "src/app/component/register/register.component";
 import { ListTasksComponent } from "src/app/components/list-tasks/list-tasks.component";
+import { RegisterComponent } from "src/app/components/register/register.component";
 
 export const TaskRoutes: Routes = [
     {
