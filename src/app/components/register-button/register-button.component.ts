@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'register-button',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./register-button.component.scss']
 })
 export class RegisterButtonComponent {
+  @Output() valueChange = new EventEmitter;
 
+  public onClick(): void {
+    this.valueChange.emit();
+  }
 }

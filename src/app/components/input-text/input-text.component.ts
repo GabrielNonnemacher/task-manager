@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./input-text.component.scss']
 })
 export class InputTextComponent {
-
+  placeholder = "Enter your task here..."
+  value = "";
 }

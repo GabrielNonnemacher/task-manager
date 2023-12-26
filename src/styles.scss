@@ -2,7 +2,8 @@
 
 :root {
     --font-default: 'Lato', sans-serif;
-    --white: rgb(240, 240, 240);
+    --white-001: rgb(240, 240, 240);
+    --white-002: rgb(230, 230, 230);
     --yellow: #fecd23;
     --red-001: #cf0638;
     --red-002: #eb2d2d;
@@ -11,9 +12,9 @@
     --orange: #fa6632;
     --blue: #1e6495;
     --tema-001: #38be9a;
-    --tema-002: #59e2be;
-    --grey-001: rgb(217, 217, 217);
-    --grey-002: rgb(98, 98, 98);
+    --tema-002: #49d6b0;
+    --gray-001: rgb(217, 217, 217);
+    --gray-002: rgb(98, 98, 98);
 }
 
 * {

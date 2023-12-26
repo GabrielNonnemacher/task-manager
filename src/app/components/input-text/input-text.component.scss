@@ -1,0 +1,45 @@
+.container {
+    min-width: 100%;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+label,
+input {
+    width: 60%;
+}
+
+label {
+    height: 24px;
+    margin: 16px 0px 8px;
+    font-weight: 600;
+}
+
+input {
+    height: 40px;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    background-color: var(--white-001);
+}
+
+input::placeholder {
+    color: var(--gray-002);
+}
+
+@media screen and (max-width: 1040px) {
+    label,
+    input {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    label,
+    input {
+        width: 100%;
+    }
+}
