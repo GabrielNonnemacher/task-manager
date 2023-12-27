@@ -13,7 +13,7 @@ export class ListTasksComponent implements OnInit {
   tasks: Task[] = [] as Task[];
 
   ngOnInit(): void {
-    this.tasks = [{ id: 2, name: "wewewwwwwwwww w wdde wewewew wdwewe weeeeeeeeee wewewew wdwewe weeeeeeeeee ee eeeee ewewee ssssssss wewewew wdwewe weeeeeeeeee ee eeeee ewe wewewew wdwewe weeeeeeeeee ee eeeee ewewee ssssssss wewewew wdwewe weeeeeeeeee ee eeeee ewewee ssssssss wewewew wdwewe weeeeeeeeee ee eeeee ewewee ssssssss wewewew wdwewe weeeeeeeeee ee eeeee ewewee sssssssswee ssssssss wewewew wdwewe weeeeeeeeee ee eeeee ewewee ssssssss ee eeeee ewewee ssssssssss wwwwwwwwwwwwwww wwwwwwwwwwww", status: false }, { id: 3, name: "wewew", status: true }] //this.listTasks();
+    this.tasks = this.listTasks();
   }
 
   private listTasks(): Task[] {

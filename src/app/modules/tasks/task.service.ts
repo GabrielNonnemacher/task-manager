@@ -14,9 +14,11 @@ export class TaskService {
 
   register(task: Task): void {
     const tasks: Task[] = this.listAll();
-    const lastId: number | undefined = tasks[tasks.length - 1].id;
+    const lastId: number | undefined = tasks?.length ? tasks[tasks.length - 1].id : undefined;
     task.id = lastId !== undefined ? lastId + 1 : 0;
-    tasks.push(TaskDTO.mapperDto(task))
+    task.status = false;
+    tasks.push(TaskDTO.mapperDto(task));
+    localStorage['tasks'] = JSON.stringify(tasks);
   }
 
   get(id: number): Task | undefined {

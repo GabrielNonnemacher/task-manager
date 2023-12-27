@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Task } from 'src/app/modules/tasks/models/task.model';
 
 @Component({
   selector: 'input-text',
@@ -7,5 +8,12 @@ import { Component } from '@angular/core';
 })
 export class InputTextComponent {
   placeholder = "Enter your task here..."
-  value = "";
+  @Input() task: Task = {} as Task;
+  @Output() onChange = new EventEmitter;
+  
+  public onChangeValue(): void {
+    console.log(this.task.name);
+    
+    this.onChange.emit(this.task);
+  }
 }

@@ -18,10 +18,14 @@ export class RegisterComponent {
   task: Task = {} as Task;
   @ViewChild("formTask", { static: true }) formTask!: NgForm;
 
+  public onChange(task: Task): void {
+    this.task = task;
+  }
+
   public registerTask(): void {
-    if(this.formTask.form.valid) {
+    if (this.formTask.form.valid) {
       this.service.register(this.task);
-      this.router.navigate(["/tarefas"]);
+      this.router.navigate(["/tasks"]);
     }
   }
 }

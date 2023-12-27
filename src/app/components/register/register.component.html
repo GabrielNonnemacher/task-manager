@@ -6,12 +6,17 @@
     <form #formTask="ngForm"
           autocomplete="off">
 
-        <input-text class="c"></input-text>
+        <input-text [task]="task"
+                    (onChange)="onChange($event)">
+        </input-text>
 
         <div class="container-buttons">
             <div>
-                <back-button></back-button>
-                <register-button></register-button>
+                <back-button>
+                </back-button>
+
+                <register-button (onClick)="registerTask()">
+                </register-button>
             </div>
         </div>
     </form>
