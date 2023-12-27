@@ -17,6 +17,7 @@ import { RegisterButtonComponent } from './components/register-button/register-b
 import { BackButtonComponent } from './components/back-button/back-button.component';
 import { FormsModule } from '@angular/forms';
 import { InputTextComponent } from './components/input-text/input-text.component';
+import { EditComponent } from './components/edit/edit.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { InputTextComponent } from './components/input-text/input-text.component
     RegisterComponent,
     RegisterButtonComponent,
     BackButtonComponent,
-    InputTextComponent
+    InputTextComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,

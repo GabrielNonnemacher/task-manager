@@ -1,23 +1,25 @@
-import { Component, Input, ViewChild } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { TitleButton } from 'src/app/common/enum/titleButton.enum';
 import { Task } from 'src/app/modules/tasks/models/task.model';
 import { TaskService } from 'src/app/modules/tasks/task.service';
 
+type NewType = Task;
+
 @Component({
-  selector: 'app-register',
-  templateUrl: './register.component.html',
-  styleUrls: ['./register.component.scss']
+  selector: 'app-edit',
+  templateUrl: './edit.component.html',
+  styleUrls: ['./edit.component.scss']
 })
-export class RegisterComponent {
+export class EditComponent {
   constructor(
     private readonly service: TaskService,
     private readonly router: Router,
   ) {}
 
-  task: Task = {} as Task;
-  title: string = TitleButton.register;
+  task: NewType = {} as Task;
+  title: string = TitleButton.update;
   @ViewChild("formTask", { static: true }) formTask!: NgForm;
 
   public onChange(task: Task): void {

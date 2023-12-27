@@ -10,6 +10,7 @@ import { ControlContainer, NgForm } from '@angular/forms';
 ]
 })
 export class RegisterButtonComponent {
+  @Input() title: string = "";
   @Input() disabled: boolean = false;
   @Output() onClick = new EventEmitter;
 
