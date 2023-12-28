@@ -16,7 +16,8 @@
                 </back-button>
 
                 <register-button (onClick)="updateTask()"
-                                 [title]="title">
+                                 [title]="title"
+                                 [disabled]="!(!!task.name && task.name.length > 4)">
                 </register-button>
             </div>
         </div>

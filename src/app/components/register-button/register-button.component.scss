@@ -13,3 +13,8 @@ button {
 button:hover {
     background-color: var(--tema-002);
 }
+
+button:disabled {
+    cursor: not-allowed;
+    background-color: var(--tema-003);
+}
