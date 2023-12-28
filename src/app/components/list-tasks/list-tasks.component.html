@@ -19,7 +19,9 @@
         <td [ngClass]="{sucess: task.status}">
             <div class="container-actions">
                 <edit-button [id]="task.id"></edit-button>
-                <delete-button></delete-button>
+                <delete-button [task]="task"
+                               (click)="deleteTask($event, task)">
+                </delete-button>
             </div>
         </td>
     </tr>
