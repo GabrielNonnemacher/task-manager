@@ -18,7 +18,7 @@ export class TaskService {
     task.id = lastId !== undefined ? lastId + 1 : 0;
     task.status = false;
     tasks.push(TaskDTO.mapperDto(task));
-    localStorage['tasks'] = JSON.stringify(tasks);
+    this.save(tasks);
   }
 
   get(id: number): Task | undefined {
@@ -27,11 +27,12 @@ export class TaskService {
   }
 
   update(task: Task): void {
-    const tasks: Task[] = this.listAll();
-    tasks.forEach((element: Task) => {
+    let tasks: Task[] = this.listAll();
+    tasks = tasks.map((element: Task) => {
       if (element.id === task.id) {
-        element = TaskDTO.mapperDto(task);
+        return TaskDTO.mapperDto(task);
       }
+      return element
     });
     this.save(tasks)
   }

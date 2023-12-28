@@ -1,6 +1,6 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { TitleButton } from 'src/app/common/enum/titleButton.enum';
 import { Task } from 'src/app/modules/tasks/models/task.model';
 import { TaskService } from 'src/app/modules/tasks/task.service';
@@ -12,24 +12,31 @@ type NewType = Task;
   templateUrl: './edit.component.html',
   styleUrls: ['./edit.component.scss']
 })
-export class EditComponent {
+export class EditComponent implements OnInit {
   constructor(
     private readonly service: TaskService,
-    private readonly router: Router,
+    private readonly route: ActivatedRoute,
+    private readonly router: Router
   ) {}
 
-  task: NewType = {} as Task;
+
+  task: Task = {} as Task;
   title: string = TitleButton.update;
   @ViewChild("formTask", { static: true }) formTask!: NgForm;
+
+  public ngOnInit(): void {
+    const id = +this.route.snapshot.params['id'];
+    this.task = this.service.get(id) || {};
+  }
 
   public onChange(task: Task): void {
     this.task = task;
   }
 
-  public registerTask(): void {
+  public updateTask(): void {
     if (this.formTask.form.valid) {
-      this.service.register(this.task);
-      this.router.navigate(["/tasks"]);
+      this.service.update(this.task);
+      this.router.navigate(['/tasks']);
     }
   }
 }
