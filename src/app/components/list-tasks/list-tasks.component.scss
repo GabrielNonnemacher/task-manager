@@ -4,9 +4,10 @@ table {
 
 th {
     color: var(--white-001);
-    height: 36px;
+    height: 64px;
     text-align: center;
     padding: 16px;
+    font-size: 24px;
 }
 
 th:nth-child(1) {
@@ -47,8 +48,8 @@ td:nth-child(3) {
 
 td {
     text-align: center;
-    padding: 8px;
-    font-size: 10px;
+    padding: 12px 16px;
+    font-size: 12px;
 }
 
 .no-tasks {
@@ -65,7 +66,7 @@ td {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 64px;
+    height: 80px;
 }
 
 .container-actions {
