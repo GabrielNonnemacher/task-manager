@@ -4,9 +4,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--gray-002);
+    border: 1px solid var(--tema-001);
     border-radius: 4px;
     background-color: var(--tema-001);
+    cursor: pointer;
 }
 
 .container:hover {
