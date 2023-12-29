@@ -22,6 +22,7 @@ export class ListTasksComponent implements OnInit {
 
   public onChangeStatus(id: number): void {
     this.service.updateStatus(id);
+    this.tasks = this.listTasks();
   }
 
   public deleteTask($event: any, task: Task): void {
