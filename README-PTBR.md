@@ -53,6 +53,10 @@ ng build
 
 <br/>
 
+## ➡️ Link
+<a href="https://gabriel-nonnemacher-task-manager.vercel.app/tasks" target="_blank" rel="noopener noreferrer">Link Gerenciador de Tarefas<a/>
+<br/>
+
 ## 👀 Preview
 ### Telas do Gerenciador de Tarefas
 ![task manager](https://github.com/GabrielNonnemacher/task-manager/assets/87139289/2a5f53dd-15c8-47fb-9384-d02a99b959a6)
