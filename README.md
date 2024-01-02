@@ -54,6 +54,10 @@ ng build
 
 <br/>
 
+## ➡️ Link
+<a href="https://gabriel-nonnemacher-task-manager.vercel.app/tasks" target="_blank" rel="noopener noreferrer">Link Task Manager<a/>
+<br/>
+
 ## 👀 Preview
 ### Screens Task Manager
 ![task manager](https://github.com/GabrielNonnemacher/task-manager/assets/87139289/52cfc3aa-2d4f-4410-a784-7b09970c1729)
