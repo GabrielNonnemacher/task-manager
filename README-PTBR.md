@@ -28,7 +28,7 @@ Uma aplicação de gestão de tarefas, embora de âmbito simples, desempenha um 
 
 ## 📄 Licença
 
-MIT License - veja o arquivo [LICENSE](https://github.com/GabrielNonnemacher/calculator/blob/master/LICENSE) para detalhes.
+MIT License - veja o arquivo [LICENSE](https://github.com/GabrielNonnemacher/task-manager/blob/master/LICENSE) para detalhes.
 
 <br/>
 
