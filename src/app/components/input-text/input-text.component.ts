@@ -11,9 +11,7 @@ export class InputTextComponent {
   @Input() task: Task = {} as Task;
   @Output() onChange = new EventEmitter;
   
-  public onChangeValue(): void {
-    console.log(this.task.name);
-    
+  public onChangeValue(): void {    
     this.onChange.emit(this.task);
   }
 }

@@ -27,7 +27,7 @@ export class ListTasksComponent implements OnInit {
 
   public deleteTask($event: any, task: Task): void {
     $event.preventDefault();
-    if (confirm('Do you want to remove this task "' + task.name + '"?') && !!task.id) {
+    if (confirm('Do you want to remove this task "' + task.name + '"?') && !!task.id || task.id === 0) {
       this.service.delete(task.id);
       this.tasks = this.listTasks();
     }
