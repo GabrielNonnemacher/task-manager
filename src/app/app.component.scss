@@ -5,9 +5,14 @@
     height: 100vh;
 }
 
+.content-app {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .container-app {
     max-width: 1500px;
-    width: 100%;
-    padding: 0px 10%;
+    width: 80%;
     margin-top: 24px;
 }
