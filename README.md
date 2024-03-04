@@ -37,7 +37,7 @@ MIT License - see the file [LICENSE](https://github.com/GabrielNonnemacher/task-
 
 First copy the project to a desired folder
 ```
-git clone https://github.com/GabrielNonnemacher/calculator.git
+git clone https://github.com/GabrielNonnemacher/task-manager.git
 ```
 Install necessary dependencies
 ```
