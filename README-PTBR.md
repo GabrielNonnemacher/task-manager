@@ -36,7 +36,7 @@ MIT License - veja o arquivo [LICENSE](https://github.com/GabrielNonnemacher/tas
 
 Primeiramente copie o projeto para uma pasta desejada
 ```
-git clone https://github.com/GabrielNonnemacher/calculator.git
+git clone https://github.com/GabrielNonnemacher/task-manager.git
 ```
 Instale as dependências necessárias
 ```
