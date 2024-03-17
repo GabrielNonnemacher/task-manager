@@ -18,6 +18,8 @@ import { BackButtonComponent } from './components/back-button/back-button.compon
 import { FormsModule } from '@angular/forms';
 import { InputTextComponent } from './components/input-text/input-text.component';
 import { EditComponent } from './components/edit/edit.component';
+import { ActionsMobileComponent } from './components/actions-mobile/actions-mobile.component';
+import { ActionsButtonComponent } from './components/actions-button/actions-button.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { EditComponent } from './components/edit/edit.component';
     RegisterButtonComponent,
     BackButtonComponent,
     InputTextComponent,
-    EditComponent
+    EditComponent,
+    ActionsMobileComponent,
+    ActionsButtonComponent
   ],
   imports: [
     BrowserModule,

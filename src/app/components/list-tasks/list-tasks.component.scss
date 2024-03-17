@@ -79,5 +79,25 @@ td {
 }
 
 .sucess {
-    background-color:  var(--green-002) !important;
+    background-color: var(--green-002) !important;
+}
+
+.mobile-container-actions {
+    display: none;
+}
+
+@media (max-width: 920px) {
+    th {
+        font-size: 16px;
+    }
+
+    .mobile-container-actions {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-actions {
+        display: none;
+    }
 }
